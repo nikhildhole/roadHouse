@@ -1,7 +1,7 @@
 FROM node:18
 WORKDIR /app
 COPY package.json /app
-RUN npm install
-CMD . /app
-CMD node server.js
-EXPOSE 8888
+run npm install
+copy . .
+expose 8888
+cmd node server.js
